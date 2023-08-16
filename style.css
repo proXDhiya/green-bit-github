@@ -1,0 +1,47 @@
+:root {
+    --gb-color: #f5f5f5;
+    --color-primary: #000000;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gb-color);
+    font-family: var(--font-family);
+    color: var(--color-primary);
+}
+
+header {
+    & > nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: var(--color-primary);
+        color: var(--gb-color);
+        & > a {
+            color: var(--gb-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        & > ul {
+            display: flex;
+            list-style: none;
+            & > li {
+                margin-left: 1rem;
+                & > a {
+                    color: var(--gb-color);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
